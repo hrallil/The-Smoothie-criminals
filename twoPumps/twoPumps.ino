@@ -8,7 +8,7 @@
 #define PUMP1OUT 33
 
 
-#define BTN2 35
+#define BTN2 13
 #define PUMP2IN 27
 #define PUMP2OUT 26
 
@@ -38,12 +38,12 @@ void loop() {
   //first pump
   currentState1 = digitalRead(BTN1);
   if (currentState1 == LOW){
-    Serial.println("The button 1 is pressed");
+    Serial.println("");
     digitalWrite(PUMP1OUT, HIGH);
     digitalWrite(PUMP1IN, LOW);
   }
   else if (lastState1 == LOW && currentState1 == HIGH || currentState1 == HIGH){
-    Serial.println("The button 1 was released");
+    Serial.println("");
     digitalWrite(PUMP1OUT, LOW);
     digitalWrite(PUMP1IN, LOW);
     }
