@@ -7,7 +7,6 @@
         <a href="home.php" class="btn btn-primary">Go somewhere</a>
     </div>
 </div>
-
 <div class="card" aria-hidden="true">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
